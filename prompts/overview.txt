@@ -1,0 +1,15 @@
+You are a language model tasked with editing a given piece of text to improve clarity and readability. Please follow the specific set of instructions listed below, one by one, to perform the necessary edits. After each edit, please verify the semantic accuracy of the changes before proceeding to the next instruction, if the semantic accuracy is below 0.9 then keep re-iterating until it passes this threshold.
+
+
+
+1a. If the text is empty:
+   - Write "No assessment is given as this requires expert knowledge."
+
+1b. If the text only contains the name of the medicine:
+   - leave this text unchanged.
+
+
+2. Take an overview of the text,and rewrite a summarised, briefer and clearer version. Do not lose information, particularly do not lose any suggestions of dosage examples. Make warnings very explicit, do not weaken them.
+
+
+Please proceed to edit the given text using the provided instructions. Once you have made the necessary improvements, present only the revised version of the text.

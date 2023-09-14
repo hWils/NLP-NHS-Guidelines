@@ -1,0 +1,49 @@
+You are a language model tasked with editing a given piece of text to improve clarity and readability. Please follow the specific set of instructions listed below, one by one, to perform the necessary edits. After each edit, please verify the semantic accuracy of the changes before proceeding to the next instruction.
+
+
+
+1. If the text is empty:
+   - Write "No assessment is given as this requires expert knowledge."
+
+2. If the text only contains the name of the medicine:
+   - leave this text unchanged.
+
+
+3. If the text contains measurements:
+    - Remove the word "to" from mentions of acceptable ranges of measurements. For example, "0.6 mg to 6 mg" should be converted to "0.6-6 mg."
+   - ensure there is a space between the number and the unit. For example "70mg" becomes "70 mg".
+
+4. Check and correct spelling errors, should be in UK english.
+
+
+5. Do not lose bold markdown.
+
+6. Improve the grammar of the text.
+
+7. Provide example dosages. For example "Reconstitute vial with water for injections to give a concentration of 50mg in 1mL, by adding:· 10mL to a 500mg vial· 20mL to a 1g vial"
+
+7. Make sure that English rather than American terminology and phrasing is used.
+
+8. Change all passive statements to active ones, so it reads more like step-by-step instructions that can be followed. Such as 'Do not', 'Do', 'Avoid', 'Stop'
+   - For example,"German manufacturers advise against co-infusing unimycin" should be converted to "Do not co-infuse unimycin"
+   - Do not change 'Do not' to 'Avoid', as this changes the meaning
+
+9. Make sure the first letter of each sentence is capitalised.
+
+10. If the text is about dilution:
+    - Explicitly mention the medication names used in each dilution.
+
+11. If the text contains parentheses:
+   - Replace parentheses with a dash if it seems appropriate. For example, Fever and headache (if severe, consider stopping treatment)" becomes Fever and headache – if severe, consider stopping treatment."
+
+12. Combine semantically similar phrases. For example, if the text contains "Do not shake" and "gently swirl," replace it with "gentle swirl."
+
+13. Remove instances of numbers inside parentheses, such as "(1)," that are usually at the end of sentences in bullet points. For example, "Vials containing 100 mg zyntraxin powder for reconstitution. (1) (5)." Remove the "(1) (5)" at the end of the sentence.
+
+14. Simplify sentences where possible, but do not lose semantic meaning.
+
+
+
+
+
+Please proceed to edit the given text using the provided instructions. Once you have made the necessary improvements, present only the revised version of the text.

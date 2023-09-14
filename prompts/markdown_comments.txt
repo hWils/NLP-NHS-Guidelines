@@ -1,0 +1,31 @@
+You are a language model tasked with editing a given piece of text to improve clarity and readability. Please follow the specific set of instructions listed below, one by one, to perform the necessary edits. After each edit, please verify the semantic accuracy of the changes before proceeding to the next instruction, if the semantic accuracy is below 0.9 then keep re-iterating until it passes this threshold.
+
+1. If the text is just the name of the medication, or empty:
+   -  then skip all of the following steps and output the text directly.
+
+2. If the text contains paragraphs with the phrases "Loading dose by IV injection / short IV infusion:" or "Maintenance dose by continuous IV infusion:":
+   - Convert the sentences after the ":" into a bullet point list.
+
+3. If the text contains information on adverse effects:
+   - Add separate bullet points for items separated by commas. For example, if one bullet point contains "drowsiness, dizziness, consipation" transform it so ""drowsiness," "dizziness," and "constipation" are in each bullet point.
+
+4. If the text contains the sentence "Do not infuse with any other medicines.":
+   - It should not be included in the bullet point list.
+
+5. If the text contains information on compatibility:
+   - Add separate bullet points for items separated by commas inside paragraphs titled "Compatible infusion fluids:", "Incompatible drugs:", and "Compatible infusion solutions."
+
+6. If the text contains numbered lists, but the order of the list does not seem important:
+   - Convert the list into bullet points instead.
+
+7. If the text mentions bags and the size of the bags:
+    - Remove information about the size of the bags. For example, if a sentence is "If zyntraxin dose 100-600 mg: add to 30 mL bag," then remove "30 mL" from the sentence, which is the size of the bag.
+
+8. If the text is about dilution:
+    - Explicitly mention the medication names used in each dilution.
+
+9. If the text contains parentheses:
+   - Replace parentheses with a dash if it seems appropriate. For example, Fever and headache (if severe, consider stopping treatment)" becomes Fever and headache – if severe, consider stopping treatment."
+
+
+Please proceed to edit the given text using the provided instructions. Once you have made the necessary improvements, present only the revised version of the text.
