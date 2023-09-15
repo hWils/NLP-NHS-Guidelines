@@ -1,10 +1,26 @@
 # NLP-NHS-Guidelines
+This code is designed to enhance the guidelines for administering IV medication for nurses in the NHS, with the aim of reducing errors that can sometimes lead to fatalities due to poorly written guidelines. We utilize GPT from OpenAI for this purpose.
 
-This code is used to improve guidelines for administering IV medication for nurses in the NHS. This is to reduce mistakes that can occur, sometimes resulting in fatalities, due to badly written guidelines. This uses GPT via OpenAI.
+## Writing Enhancement
+The guideline is initially divided into sections, categorized by headers such as 'Administration' and 'Compatibility with Other Medicines.' We then extract the text from each section, enabling us to handle each section individually, providing greater control over the output. The writing improvement process takes place in three stages:
 
-The guideline is first divided into sections based on headers such as 'Administration', 'Compatability with Other Medicines', and text from each section is extracted. Dealing with each section individually provids more control over the output. The writing based improvements occur in three stages.
-1. A summarised verson of the text is output- focusing on brevity
-2. A refined version of the text which makes more subtle tweaks to the text based on feedback from nurses in user-studies.
-3. The markdown of the text is improved.
+1. We generate a summarized version of the text, focusing on brevity.
+2. A refined version of the text is produced, making subtle adjustments based on feedback gathered from nurses in user studies.
+3. The markdown formatting of the text is enhanced.
 
+## Adding Technical Suggestions
+This tool serves as a support system rather than a replacement for human experts. We do not use GPT to generate technical content but provide suggestions for additional information that should be added by a technical expert. This process involves several steps. Initially, an extra resources document with detailed medicine information is used to generate a list of questions that might have been asked during its creation. We then input the actual medicine guideline document (which we aim to improve) into GPT, along with a prompt to identify which of these questions remain unanswered, indicating potentially missing information. This list is then mapped to the relevant sections in the medication guideline document.
+
+Below is a schematic illustrating how these two pipelines integrate:
 ![pipeline](https://github.com/hWils/NLP-NHS-Guidelines/assets/47060850/c8c67941-717c-4d60-a226-2559b1edd284)
+
+
+
+## Key Evaluation Metrics
+- **Readability**: We use the Flesch-Kincaid grade score, where a lower score indicates improved readability.
+- **Semantic Similarity**: We rely on BERT Score to ensure that the meaning of each sentence remains consistent.
+- **Factfulness**: Entities are identified using AWS in both the original and improved versions to check for any information loss or added details.
+- Custom GPT hallucination checker.
+
+
+
