@@ -1,5 +1,5 @@
 # NLP-NHS-Guidelines
-This code is designed to enhance the guidelines for administering IV medication for nurses in the NHS, with the aim of reducing errors that can sometimes lead to fatalities due to poorly written guidelines. We utilize GPT from OpenAI for this purpose.
+This code is designed to enhance the guidelines for administering IV medication for nurses in the NHS, with the aim of reducing errors that can sometimes lead to fatalities due to poorly written guidelines. We utilize GPT (fixed at gpt-4-0314) from OpenAI for this purpose.
 
 ## Writing Enhancement
 The guideline is initially divided into sections, categorized by headers such as 'Administration' and 'Compatibility with Other Medicines.' We then extract the text from each section, enabling us to handle each section individually, providing greater control over the output. The writing improvement process takes place in three stages:
