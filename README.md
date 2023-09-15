@@ -23,4 +23,8 @@ Below is a schematic illustrating how these two pipelines integrate:
 - Custom GPT hallucination checker.
 
 
-
+# Code
+- refined-aws-medical-comments.ipynb - this is the main file for improving the writing. It calls the evaluation script (and can be linked in with the visualiation script).
+- evaluation_methods.ipynb - this is called in the main script. It contains all the metrics for assessing the safety and efficacy of the improved versions
+- technical.ipynb - this is used to generate technical suggestions, and is a standalone script
+- visualisation.ipynb - this script is used to generate a knowledge graph with entities and their relations grouped by entity type to give a quick snapshop of the document content.
