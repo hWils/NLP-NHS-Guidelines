@@ -28,3 +28,13 @@ Below is a schematic illustrating how these two pipelines integrate:
 - evaluation_methods.ipynb - this is called in the main script. It contains all the metrics for assessing the safety and efficacy of the improved versions
 - technical.ipynb - this is used to generate technical suggestions, and is a standalone script
 - visualisation.ipynb - this script is used to generate a knowledge graph with entities and their relations grouped by entity type to give a quick snapshop of the document content.
+
+# Prompts
+This folder contains the following prompts:
+
+- Step 1: Summarise the content for brevity - overview.txt
+- Step 2: Refine the writing style - experimental_comments.txt
+- Step 3: Improve the markdown - markdown.txt
+- Technical suggestions:
+- Visualisation: knowledge_graph.txt + generate_relations.txt
+- Evaluation: hallucinate_check.txt
